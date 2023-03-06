@@ -1,8 +1,4 @@
-.App {
-  background-color: black;
-  height: 100vh;
 
-}
 
 #Lebron-Image {
   height: 75%;
@@ -15,4 +11,36 @@
   display: flex;
   align-items: center;
   height: 100vh;
+  opacity: 0%;
+}
+
+.Image:hover{
+  opacity: 100%;
+}
+
+.Enter-Button-Container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+.App {
+  background-color: black;
+  height: 100%;
+
+}
+
+.Enter-Button {
+  background-color: white;
+  height: 100%;
+  width: 10%;
+  border-radius: 70px;
+
+
+
+  text-align: center;
+  
 }

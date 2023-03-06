@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -6,6 +5,11 @@ function App() {
     <div className='App'>
       <div className='Image'>
         <img src={require('../src/images/pngwing.com.png')} id="Lebron-Image"/>
+      </div>
+     <div className='Enter-Button-Container'>
+        <div className="Enter-Button">
+          <p>Enter Here</p>
+          </div>
       </div>
     </div>
   );
