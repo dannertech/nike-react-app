@@ -1,17 +1,24 @@
-
-
-#Lebron-Image {
-  height: 75%;
-  width: 60%;
-  
+html {
+  background-color: black;
 }
 
+
 .Image {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 100vh;
+ 
   opacity: 0%;
+  width: 30%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: red;
+}
+
+.Image-Container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 45vh;
+
+
 }
 
 .Image:hover{
@@ -24,23 +31,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 } 
 
 
 .App {
   background-color: black;
-  height: 100%;
+ 
 
 }
 
 .Enter-Button {
   background-color: white;
   height: 100%;
-  width: 10%;
+  width: 15%;
   border-radius: 70px;
-
-
-
+ 
   text-align: center;
-  
+
 }
