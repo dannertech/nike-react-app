@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createBrowserRouter, RouterProvider, BrowserRouter, Router, Route, Routes} from 'react-router-dom';
+
+import Main from '../src/screens/Main';
+import SingleItem from '../src/screens/SingleItem';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App />}/>
+        <Route path='inventory' element={<Main />}/>
+        <Route />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

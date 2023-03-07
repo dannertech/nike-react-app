@@ -28,7 +28,7 @@ function App() {
       </div>
      <div className='Enter-Button-Container'>
         <div className="Enter-Button">
-          <p>Enter Here</p>
+          <p id='Enter-Button-Text'>Just Do It</p>
           </div>
       </div>
     </div>

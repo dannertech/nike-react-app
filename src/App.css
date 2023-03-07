@@ -25,7 +25,8 @@ html {
 
 .Image:hover{
   opacity: 100%;
-}
+ 
+} 
 
 .Enter-Button-Container {
   width: 100%;
@@ -35,6 +36,11 @@ html {
   justify-content: center;
 
 } 
+
+#Enter-Button-Text {
+  font-weight: bold;
+
+}
 
 
 .App {
