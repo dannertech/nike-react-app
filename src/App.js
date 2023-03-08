@@ -1,6 +1,20 @@
 import './App.css';
+import {Link} from 'react-router-dom';
+import styled from 'styled-components';
+
+
 
 function App() {
+
+  const Button = styled.button`
+background-color: white;
+height: 100%;
+width: 15%;
+border-radius: 70px;
+font-weight: bold;
+text-align: center;
+
+`;
   return (
     <div className='App'>
       <div className='Image-Container'>
@@ -27,9 +41,7 @@ function App() {
       </div>
       </div>
      <div className='Enter-Button-Container'>
-        <div className="Enter-Button">
-          <p id='Enter-Button-Text'>Just Do It</p>
-          </div>
+        <Button>Just Do It</Button>
       </div>
     </div>
   );
