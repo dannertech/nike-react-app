@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleItem = () => {
+const Total = () => {
     return (
         <div>
             <p style={{color: 'white'}}>This is the total page</p>
@@ -8,4 +8,4 @@ const SingleItem = () => {
     )
 };
 
-export default SingleItem;
+export default Total;

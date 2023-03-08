@@ -8,7 +8,7 @@ const inventory = [
     {
         title: "Nike x Off White",
         cost: 500,
-        image: require('../images/nike-offwhite-dunk.png')
+        image: require('../images/nike-offwhite-dunk-9.png')
 
     },
     {
@@ -30,4 +30,6 @@ const inventory = [
 
     },
 
-]
+];
+
+export default inventory;

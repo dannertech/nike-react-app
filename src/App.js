@@ -1,20 +1,28 @@
 import './App.css';
-import {Link} from 'react-router-dom';
+import {Link, Navigate, useNavigate} from 'react-router-dom';
 import styled from 'styled-components';
 
 
 
 function App() {
+  //hooks
+  const navigate = useNavigate();
 
-  const Button = styled.button`
+  //styled components
+const Button = styled.button`
 background-color: white;
 height: 100%;
 width: 15%;
 border-radius: 70px;
 font-weight: bold;
 text-align: center;
-
 `;
+
+//individual screen functionality
+function enterButtonClick(){
+ navigate('/inventory');
+};
+
   return (
     <div className='App'>
       <div className='Image-Container'>
@@ -41,7 +49,7 @@ text-align: center;
       </div>
       </div>
      <div className='Enter-Button-Container'>
-        <Button>Just Do It</Button>
+        <Button onClick={() => enterButtonClick()}>Just Do It</Button>
       </div>
     </div>
   );

@@ -43,7 +43,6 @@
 .App {
   background-color: red;
   height: 100vh;
-
 }
 
 .Enter-Button {
@@ -51,7 +50,19 @@
   height: 100%;
   width: 15%;
   border-radius: 70px;
- 
   text-align: center;
 
+}
+
+
+#ItemCard {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+
+}
+
+#ItemCardImage {
+  height: 50px;
+  width: 50px;
 }
