@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider, BrowserRouter, Router, Route, Routes} from 'react-router-dom';
 
 import Main from '../src/screens/Main';
-import SingleItem from '../src/screens/SingleItem';
+import Total from './screens/Total';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +16,7 @@ root.render(
       <Routes>
         <Route path='/' element={<App />}/>
         <Route path='inventory' element={<Main />}/>
-        <Route />
+        <Route path='/total' element={<Total />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

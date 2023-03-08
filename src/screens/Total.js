@@ -3,7 +3,7 @@ import React from 'react';
 const SingleItem = () => {
     return (
         <div>
-            <p>This is the Single Item page</p>
+            <p style={{color: 'white'}}>This is the total page</p>
         </div>
     )
 };
