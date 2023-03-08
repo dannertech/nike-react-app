@@ -56,13 +56,28 @@
 
 
 #ItemCard {
-  height: 100px;
-  width: 100px;
+  height:300px;
+  width: 200px;
   background-color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 
 #ItemCardImage {
-  height: 50px;
-  width: 50px;
+  height: 140px;
+  width: 170px;
+}
+
+#ItemCardContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#ItemCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
