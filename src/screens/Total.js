@@ -1,12 +1,15 @@
 import React from 'react';
 import '../App.css';
+import Header from '../components/Header.js';
 
 const Total = () => {
-    return (
+    return(
         <div>
-            <p style={{color: 'white'}}>This is the total page</p>
+            <Header />
+            <div>
+                <img src={require('../images/nike-mona-lisa.png')}/>
+            </div>
         </div>
     )
-};
-
+}
 export default Total;

@@ -19,6 +19,7 @@ const Header = () => {
         <div id="Header">
             <img src={require('../images/nike-white-logo.png')} style={{height: '50%', width: '10%', marginTop: '3%', marginLeft: '3%'}}/>
             <Button onClick={() => navigate('/total')} id="Header-Button">Go To Total</Button>
+            
         </div>
     )
 };
