@@ -1,8 +1,7 @@
 import React, {useContext} from 'react';
 import '../App.css';
 import styled from 'styled-components';
-import {Provider} from '../context/CartContext.js';
-
+import { Context } from '../context/CartContext';
 
 //styled components
 const Button = styled.button`
@@ -13,6 +12,7 @@ border-style: none;
 `
 
 const ItemCard = ({image, cost, title}) => {
+    const {addToCart} = useContext(Context);
 
     return(
         <div id="ItemCard">
@@ -21,7 +21,7 @@ const ItemCard = ({image, cost, title}) => {
                 <img src={image} id="ItemCardImage" />
                 <h3>{`$${cost}`}</h3>
                 <div style={{width: '100%', backgroundColor: 'white', height: '10%'}}>
-                    <Button id="Add-To-Cart-Button">Add To Cart</Button>
+                    <Button onClick={() => addToCart(cost)} id="Add-To-Cart-Button">Add To Cart</Button>
                 </div>
             </div>
         </div>
