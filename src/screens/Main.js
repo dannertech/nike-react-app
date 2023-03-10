@@ -1,10 +1,15 @@
 import '../App.css'
-import React from 'react';
+import React, {useContext} from 'react';
 import ItemCard from '../components/ItemCard';
 import inventory from '../api/data';
 import Header from '../components/Header';
+import { Context } from '../context/CartContext';
+
 
 const Main = () => {
+    const cartContext = useContext(Context);
+
+    console.log(cartContext.state);
     return (
         <div style={{backgroundColor: 'white', overflow: 'auto', marginTop: -16}}>
             <Header />
